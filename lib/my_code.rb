@@ -23,3 +23,17 @@ def map_to_square(source_array)
   end
   source_array 
 end
+
+def reduce_to_total(source_array, starting_point)
+  total = starting_point
+  source_array.each do |x|
+    total += x
+  end
+end
+
+def reduce_to_all_total(source_array)
+  total = 1
+  source_array.each do |x|
+    total = x
+  end
+end
