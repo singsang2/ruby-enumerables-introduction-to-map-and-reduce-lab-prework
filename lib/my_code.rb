@@ -34,6 +34,6 @@ end
 def reduce_to_all_total(source_array)
   total = 1
   source_array.each do |x|
-    total = x
+    total *= x
   end
 end
