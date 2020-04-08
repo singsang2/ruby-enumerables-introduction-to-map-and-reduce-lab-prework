@@ -7,16 +7,19 @@ def map_to_negativize(source_array)
 end
 
 def map_to_no_change(source_array)
-  source_array.each_with_index do |x, i|
-    source_array[i] = -x
-  end
   source_array
 end
 
 def map_to_double(source_array)
-  
+  source_array.each_with_index do |x, i|
+    source_array[i] = 2*x
+  end
+  source_array
 end
 
 def map_to_square(source_array)
-  
+  source_array.each_with_index do |x, i|
+    source_array[i] = x**2
+  end
+  source_array 
 end
