@@ -24,14 +24,15 @@ def map_to_square(source_array)
   source_array 
 end
 
-def reduce_to_total(source_array, starting_point)
+def reduce_to_total(source_array, starting_point=0)
   total = starting_point
   source_array.each do |x|
     total += x
   end
+  total
 end
 
-def reduce_to_all_total(source_array)
+def reduce_to_all_true(source_array)
   total = 1
   source_array.each do |x|
     return false if x == false
