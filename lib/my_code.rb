@@ -39,3 +39,10 @@ def reduce_to_all_total(source_array)
   true
 end
 
+def reduce_to_any_true(source_array)
+  total = 1
+  source_array.each do |x|
+    return false if x == false
+  end
+  true
+end
